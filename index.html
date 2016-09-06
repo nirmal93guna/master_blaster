@@ -1,0 +1,138 @@
+<html>
+    
+    <head>
+        <link rel="icon" type="image/png" href="img/title.png" />
+        <title>Sachin</title>
+
+        <!--Framework files added here-->
+        <script src="js/angular/angular.min.js"></script>        
+        <script charset="utf-8" src="js/d3/d3.min.js"></script>
+        <script charset="utf-8" src="js/d3/d3.tip.js"></script>
+
+        <!--Controller files added here-->
+        <script src="app/app.js"></script>
+        <script src="app/controller/masterBlasterController.js"></script>
+        <script src="app/directive/masterBlasterDirective.js"></script>
+        
+
+        <!--CSS files added here-->
+        <link href="https://fonts.googleapis.com/css?family=Baloo+Paaji" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Slackey" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css" />
+        
+
+    </head>
+
+    <body>
+        <div class="mStoneWay">            
+        </div>
+        <div class="mileStone">                
+        </div>
+        <div class="lowPermanent">
+            This Resolution is not supported, as Charts has been used. Kindly use a device with higher resolution....
+        </div>
+        
+        <div ng-app="masterBlasterApp" scroll>
+            <div ng-controller="masterBlasterController">
+                 
+                 
+
+                 <div class="endTitle">
+                                {{Final}}   <br>
+                                -{{FinalSay}}
+                 </div>
+                 
+                 <div class="permanent">
+                     <div class="leftSpace">
+                        <div class="div11">
+                            <img class="img1" src="img/main.png" />
+                        </div>
+                        <div class="div12">
+                            <img class="img2" src="img/sachin-1.png" />     
+                        </div>                        
+                        <div class="div13">
+                            <img class="img3" src="img/sachin-2.png" />
+                        </div>
+                        <div class="div14">
+                            <img class="img4" src="img/sachin-3.png" />
+                        </div>
+                        <div class="div15">
+                            <img class="img5" src="img/sachin-4.png" />  
+                        </div>                                                                                                                                                                           
+                     </div>
+                     <div class="rightSpace">
+                         <div class="div21">
+                             <div class="wordsSpace1">
+                                <span>
+                                    {{wordsOne}}<br>
+                                </span>
+                                <span>
+                                    {{wordsTwo}}
+                                    <br>-{{wordsTwoSay}}
+                                </span>
+                             </div>
+                             <div class="chartSpace">
+                                <span>
+                                    {{wordsThree}}<br><br>
+                                </span>
+                                <span>
+                                    {{wordsFour}}
+                                </span>
+                             </div>
+                         </div>
+                         <div class="div22">
+                            <div class="wordsSpace2">
+                                <span>
+                                    {{wordsFive}}
+                                </span>
+
+                             </div>
+                            <svg class="chart"></svg>
+							 
+                         </div>
+                         <div class="div23">
+                             <div class="wordsSpace3">
+                                 <span>
+                                    {{wordsSix}}
+                                </span>
+                             </div>
+                             <svg class="chart2"></svg>
+                             
+                         </div>
+                         <div class="div24">
+                             <div class="wordsSpace4">
+                                 <span>
+                                    {{wordsSeven}}
+                                </span>
+                             </div>
+                            <svg class="chart3"></svg>
+
+                         </div>
+                         <div class="div25">
+                             <div class="wordsSpace5">
+                                 <span>
+                                    {{wordsEight}}<br>
+                                </span>
+                                <span>
+                                    {{wordsNine}}<br><br>
+                                </span>
+                                <span>
+                                    {{wordsTen}}
+                                </span>
+                             </div>
+                             <svg class="chart4"></svg>
+                             
+                         </div>
+
+                     </div>
+                 </div>
+
+                 <div data-ng-repeat="a in [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20] track by $index" class="container">
+
+                 </div>                
+            </div>
+        </div>
+
+    </body>
+
+</html>

@@ -1,0 +1,310 @@
+/*All the CSS styling elements here*/
+
+body {
+    margin: 0px;
+    /*font-family: 'Baloo Paaji', cursive;*/
+}
+::-webkit-scrollbar { 
+    display: none; 
+}
+.container {
+    height: 100%;
+    box-sizing: border-box;    
+}
+
+.permanent {
+    width: 80%;
+    height: 80%;
+    position: fixed;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    /*background: rgba(256, 256, 256, 0.8);*/
+    border-radius: 25px;
+    padding: 15px;
+}
+.lowPermanent {
+    opacity: 0.0;
+    z-index: -9999;
+}
+
+.leftSpace {
+    width: 50%;
+    height: 100%;
+    box-sizing: border-box;
+    float: left;
+    position: relative;
+}
+.rightSpace {
+    width: 50%;
+    height: 100%;    
+    box-sizing: border-box;
+    float: left;
+    position: relative;
+}
+img {
+    height: 100%;
+    width: 100%;
+  
+}
+.div11, .div12, .div13, .div14, .div15{
+    width: 80%;
+    height: 70%;
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    opacity: 0.0;
+    font-size: 10px;
+    -webkit-transition: 2s; /* For Safari 3.1 to 6.0 */
+    transition: 2s;
+}
+.div21, .div22, .div23, .div24, .div25 {
+    width: 80%;
+    height: 70%;
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    /*font-size: 10px;*/
+    -webkit-transition: 2s; /* For Safari 3.1 to 6.0 */
+    transition: 2s;
+}
+.div21 {
+    z-index: 1;
+}
+.wordsSpace1, .wordsSpace2, .wordsSpace3, .wordsSpace4, .wordsSpace5, .chartSpace, .chart, .chart2, .chart3, .chart4 {
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    opacity: 0;
+    -webkit-transition: 2s; /* For Safari 3.1 to 6.0 */
+    transition: 2s;
+}
+.wordsSpace1, .wordsSpace2, .wordsSpace3, .wordsSpace4, .wordsSpace5, .chartSpace {
+    font-family: 'Slackey', cursive;
+    /*font-size: 16px;*/
+    text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+}
+
+.wordsSpace1 > span:nth-child(1) {
+    font-size: 34px;
+    
+}
+.wordsSpace1 > span:nth-child(2) {
+    -webkit-transition: 2s; /* For Safari 3.1 to 6.0 */
+    transition: 2s;
+    font-size: 38px;
+}
+.chartSpace > span:nth-child(1) {
+    font-size: 24px;
+}
+
+.chartSpace > span:nth-child(2) {
+    font-size: 34px;
+}
+.wordsSpace2 > span:nth-child(1) {
+    font-size: 34px;
+}
+.wordsSpace3 > span:nth-child(1) {
+    font-size: 34px;
+}
+.wordsSpace4 > span:nth-child(1) {
+    font-size: 34px;
+}
+.wordsSpace5 > span:nth-child(1) {
+    font-size: 34px;
+}
+.wordsSpace5 > span:nth-child(2) {
+    font-size: 24px;
+}
+.wordsSpace5 > span:nth-child(3) {
+    -webkit-transition: 2s; /* For Safari 3.1 to 6.0 */
+    transition: 2s;
+    font-size: 34px !important;
+}
+
+.endTitle {
+    position: fixed;
+    font-family: 'Slackey', cursive;
+    width: 80%;
+    height: 80%;
+    position: fixed;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    padding: 10%;
+    opacity: 0;
+    z-index: -99;
+    background-color: white;
+    font-size: 26px;    
+    -webkit-transition: 2s; /* For Safari 3.1 to 6.0 */
+    transition: 2s;
+    box-sizing: border-box;
+}
+
+
+span {
+    position: relative;
+    top: 20%;
+}
+.mStoneWay {
+    position: fixed; 
+    width: 0.5%;
+    height: 100%;
+    background-color: black;
+    left: 97%;
+
+    /*padding-bottom: 100%;*/
+    
+}
+.mileStone {    
+    background-color: red;
+    float: left;
+    width: 1.5%;
+    height: 1%;
+    position: fixed;
+    left: 96.5%;
+    
+}
+
+
+/*CSS for d3 charts*/
+
+
+.wi, .sa, .au, .in, .sl{
+	fill: steelblue;
+}
+
+.wi:hover {
+	fill: #99002e;
+}
+.sa:hover {
+	fill: #00802b;
+}
+.au:hover {
+	fill: #ffff4d;
+/*	background : url('../img/au.png'); */
+}
+.sl:hover {
+	fill: #00004d;
+}
+.in:hover {
+	fill: blue;
+}
+.chart text, .chart2 text, .chart3 text, .chart4 text {
+  font: 12px sans-serif;
+}
+.chart .title, .chart2 .title, .chart3 .title, .chart4 .title {
+  font: 15px sans-serif;
+  font-weight: bold;
+}
+
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.x.axis path {
+  display: none;
+}
+
+.d3-tip {
+  line-height: 1;
+  /*font-weight: bold;*/
+  padding: 12px;
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  border-radius: 5px;
+}
+
+/* Creates a small triangle extender for the tooltip */
+.d3-tip:after {
+  box-sizing: border-box;
+  display: inline;
+  font-size: 10px;
+  width: 100%;
+  line-height: 1;
+  color: rgba(0, 0, 0, 0.8);
+  content: "\25BC";
+  position: absolute;
+  text-align: center;
+}
+
+/* Style northward tooltips differently */
+.d3-tip.n:after {
+  margin: -1px 0 0 0;
+  top: 100%;
+  left: 0;
+}
+
+
+
+
+@media screen and (max-width: 1063px) {
+ 
+    .lowPermanent {
+        font-family: 'Baloo Paaji', cursive;
+        vertical-align: top;        
+        position: fixed;
+        height: 100%;
+        width: 100%;
+        opacity: 1;
+        z-index: 9999;
+        background-color: black;
+        font-size: 26px;
+        color: grey;
+    }
+}
+
+@media screen and (max-width: 1220px) {
+    .wordsSpace1 > span:nth-child(1) {
+        font-size: 16px;
+    }
+    .wordsSpace1 > span:nth-child(2) {
+        -webkit-transition: 2s; /* For Safari 3.1 to 6.0 */
+        transition: 2s;
+        font-size: 18px;
+    }
+    .chartSpace > span:nth-child(1) {
+        font-size: 16px;
+    }
+
+    .chartSpace > span:nth-child(2) {
+        font-size: 16px;
+    }
+    .wordsSpace2 > span:nth-child(1) {
+        font-size: 16px;
+    }
+    .wordsSpace3 > span:nth-child(1) {
+        font-size: 16px;
+    }
+    .wordsSpace4 > span:nth-child(1) {
+        font-size: 16px;
+    }
+    .wordsSpace5 > span:nth-child(1) {
+        font-size: 16px;
+    }
+    .wordsSpace5 > span:nth-child(2) {
+        font-size: 16px;
+    }
+    .wordsSpace5 > span:nth-child(3) {
+        -webkit-transition: 2s; /* For Safari 3.1 to 6.0 */
+        transition: 2s;
+        font-size: 16px !important;
+    }
+}
