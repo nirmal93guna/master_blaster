@@ -393,12 +393,14 @@ app.directive("scroll", function ($window) {
                     document.getElementsByClassName("chart3")[0].style.zIndex = "0";
                     document.getElementsByClassName("chart4")[0].style.zIndex = "1"; 
                     document.getElementsByTagName("body")[0].style.backgroundColor = "white";
+                    document.getElementsByClassName("mStoneWay")[0].style.backgroundColor = "black";
                     
                 } 
                 else {
                     document.getElementsByClassName("endTitle")[0].style.zIndex = "99";
                     document.getElementsByClassName("endTitle")[0].style.opacity = "1.0";
                     document.getElementsByTagName("body")[0].style.backgroundColor = "black";
+                    document.getElementsByClassName("mStoneWay")[0].style.backgroundColor = "white";
                 }
                 scope.$apply();
             });
