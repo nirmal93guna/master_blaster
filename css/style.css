@@ -141,7 +141,7 @@ img {
 
 
 .chartSpace > span:nth-child(1) {
-    font-size: 24px;
+    font-size: 34px;
     font-family: 'Exo', sans-serif;
     color: #1976D2;
     font-weight: 400;
@@ -451,38 +451,38 @@ span {
 
 @media screen and (max-width: 1220px) {
     .wordsSpace1 > span:nth-child(1) {
-        font-size: 16px;
+        font-size: 28px;
     }
     .wordsSpace1 > span:nth-child(2) {
         -webkit-transition: 2s; /* For Safari 3.1 to 6.0 */
         transition: 2s;
-        font-size: 18px;
+        font-size: 28px;
     }
     .chartSpace > span:nth-child(1) {
-        font-size: 16px;
+        font-size: 26px;
     }
 
     .chartSpace > span:nth-child(2) {
-        font-size: 16px;
+        font-size: 26px;
     }
     .wordsSpace2 > span:nth-child(1) {
-        font-size: 16px;
+        font-size: 28px;
     }
     .wordsSpace3 > span:nth-child(1) {
-        font-size: 16px;
+        font-size: 28px;
     }
     .wordsSpace4 > span:nth-child(1) {
-        font-size: 16px;
+        font-size: 28px;
     }
     .wordsSpace5 > span:nth-child(1) {
-        font-size: 16px;
+        font-size: 28px;
     }
     .wordsSpace5 > span:nth-child(2) {
-        font-size: 16px;
+        font-size: 22px;
     }
     .wordsSpace5 > span:nth-child(3) {
         -webkit-transition: 2s; /* For Safari 3.1 to 6.0 */
         transition: 2s;
-        font-size: 16px !important;
+        font-size: 26px !important;
     }
 }
