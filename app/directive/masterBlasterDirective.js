@@ -18,9 +18,10 @@ app.directive("scroll", function ($window) {
                     document.getElementsByClassName("div14")[0].style.opacity = "0.0";
                     document.getElementsByClassName("div15")[0].style.opacity = "0.0";
 
-                    document.getElementsByClassName("wordsSpace1")[0].style.opacity = "1.0";
+                    document.getElementsByClassName("wordsSpace1")[0].style.opacity = "0.0";
                     document.getElementsByClassName("wordsSpace1")[0].children[0].style.opacity = "0.0"; 
                     document.getElementsByClassName("wordsSpace1")[0].children[1].style.opacity = "0.0"; 
+                    document.getElementsByClassName("wordsSpace1")[0].children[0].style.display = "block";                    
                     document.getElementsByClassName("wordsSpace2")[0].style.opacity = "0.0";
                     document.getElementsByClassName("wordsSpace3")[0].style.opacity = "0.0"; 
                     document.getElementsByClassName("wordsSpace4")[0].style.opacity = "0.0";
@@ -44,12 +45,17 @@ app.directive("scroll", function ($window) {
                     document.getElementsByClassName("chart3")[0].style.zIndex = "0";
                     document.getElementsByClassName("chart4")[0].style.zIndex = "0";        
                     // console.log(scrolledPercent);                           
+ 
 
                 if(scrolledPercent < 80) {
                     document.getElementsByClassName("div11")[0].style.opacity = "0.0";
                     document.getElementsByClassName("wordsSpace1")[0].style.opacity = "1.0";                    
                     document.getElementsByClassName("wordsSpace1")[0].children[0].style.opacity = "1.0"; 
                     document.getElementsByClassName("wordsSpace1")[0].children[1].style.opacity = "0.0"; 
+                    document.getElementsByClassName("wordsSpace1")[0].children[0].style.display = "block";
+
+                    
+
                 } else if (scrolledPercent < 160) {
             	    document.getElementsByClassName("div11")[0].style.opacity = "1.0"; 
                     document.getElementsByClassName("div12")[0].style.opacity = "0.0";
@@ -60,6 +66,7 @@ app.directive("scroll", function ($window) {
                     document.getElementsByClassName("wordsSpace1")[0].style.opacity = "1.0";
                     document.getElementsByClassName("wordsSpace1")[0].children[0].style.opacity = "0.0"; 
                     document.getElementsByClassName("wordsSpace1")[0].children[1].style.opacity = "1.0"; 
+                    document.getElementsByClassName("wordsSpace1")[0].children[0].style.display = "none";                    
                     document.getElementsByClassName("wordsSpace2")[0].style.opacity = "0.0";
                     document.getElementsByClassName("wordsSpace3")[0].style.opacity = "0.0"; 
                     document.getElementsByClassName("wordsSpace4")[0].style.opacity = "0.0";
@@ -82,6 +89,7 @@ app.directive("scroll", function ($window) {
                     document.getElementsByClassName("chart2")[0].style.zIndex = "0"; 
                     document.getElementsByClassName("chart3")[0].style.zIndex = "0";
                     document.getElementsByClassName("chart4")[0].style.zIndex = "0";     
+
 
 	            } else if (scrolledPercent < 320) {
 
@@ -113,7 +121,8 @@ app.directive("scroll", function ($window) {
                     document.getElementsByClassName("chart")[0].style.zIndex = "0";
                     document.getElementsByClassName("chart2")[0].style.zIndex = "0"; 
                     document.getElementsByClassName("chart3")[0].style.zIndex = "0";
-                    document.getElementsByClassName("chart4")[0].style.zIndex = "0";                    
+                    document.getElementsByClassName("chart4")[0].style.zIndex = "0";    
+                    document.getElementsByClassName("wordsSpace1")[0].children[0].style.display = "none";                                    
                     
                 } else if (scrolledPercent < 480) {
               	    document.getElementsByClassName("div11")[0].style.opacity = "0.0"; 
@@ -383,11 +392,13 @@ app.directive("scroll", function ($window) {
                     document.getElementsByClassName("chart2")[0].style.zIndex = "0"; 
                     document.getElementsByClassName("chart3")[0].style.zIndex = "0";
                     document.getElementsByClassName("chart4")[0].style.zIndex = "1"; 
+                    document.getElementsByTagName("body")[0].style.backgroundColor = "white";
                     
                 } 
                 else {
                     document.getElementsByClassName("endTitle")[0].style.zIndex = "99";
                     document.getElementsByClassName("endTitle")[0].style.opacity = "1.0";
+                    document.getElementsByTagName("body")[0].style.backgroundColor = "black";
                 }
                 scope.$apply();
             });
