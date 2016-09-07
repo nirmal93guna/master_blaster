@@ -18,6 +18,11 @@
         <!--CSS files added here-->
         <link href="https://fonts.googleapis.com/css?family=Baloo+Paaji" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Slackey" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Exo:400,900" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Monofett" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Stalinist+One" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Bungee" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Bungee+Inline" rel="stylesheet">
         <link rel="stylesheet" href="css/style.css" />
         
 
@@ -29,7 +34,12 @@
         <div class="mileStone">                
         </div>
         <div class="lowPermanent">
-            This Resolution is not supported, as Charts has been used. Kindly use a device with higher resolution....
+            <span class="error">
+                This Resolution is not supported, as Charts has been used. 
+            </span>
+            <span class="info">
+                Kindly use a device with higher resolution....
+            </span>
         </div>
         
         <div ng-app="masterBlasterApp" scroll>
@@ -37,9 +47,9 @@
                  
                  
 
-                 <div class="endTitle">
+                 <div class="endTitle">                     
                                 {{Final}}   <br>
-                                -{{FinalSay}}
+                                -{{FinalSay}}                     
                  </div>
                  
                  <div class="permanent">
@@ -68,7 +78,7 @@
                                 </span>
                                 <span>
                                     {{wordsTwo}}
-                                    <br>-{{wordsTwoSay}}
+                                    <span><br><br>&nbsp;-{{wordsTwoSay}}&nbsp;</span>
                                 </span>
                              </div>
                              <div class="chartSpace">
@@ -111,10 +121,10 @@
                          <div class="div25">
                              <div class="wordsSpace5">
                                  <span>
-                                    {{wordsEight}}<br>
+                                    {{wordsEight}}<br><br>
                                 </span>
                                 <span>
-                                    {{wordsNine}}<br><br>
+                                    {{wordsNine}}
                                 </span>
                                 <span>
                                     {{wordsTen}}
