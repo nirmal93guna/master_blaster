@@ -6,7 +6,7 @@ app.directive("scroll", function ($window) {
                     height = this.innerHeight,
                     scrolledPercent = (offSet / height * 100);
                     document.getElementsByClassName("mileStone")[0].style.marginTop = offSet/19.2;
-                    
+                    console.log(scrolledPercent);
                     document.getElementsByClassName("endTitle")[0].style.zIndex = "-999";
                     document.getElementsByClassName("endTitle")[0].style.opacity = "0.0";  
                     
@@ -306,7 +306,7 @@ app.directive("scroll", function ($window) {
                     document.getElementsByClassName("chart3")[0].style.zIndex = "1";
                     document.getElementsByClassName("chart4")[0].style.zIndex = "0"; 
                     
-                } else if (scrolledPercent < 1440) {
+                } else if (scrolledPercent < 1360) {
             
                     document.getElementsByClassName("div11")[0].style.opacity = "0.0"; 
                     document.getElementsByClassName("div12")[0].style.opacity = "0.0";
@@ -344,11 +344,15 @@ app.directive("scroll", function ($window) {
                     document.getElementsByClassName("chart3")[0].style.zIndex = "0";
                     document.getElementsByClassName("chart4")[0].style.zIndex = "0"; 
 	
-	            } else if (scrolledPercent < 1520) {
+	            } else if (scrolledPercent < 1440) {
+                    document.getElementsByClassName("div15")[0].style.opacity = "1.0";
+                    document.getElementsByClassName("wordsSpace5")[0].style.opacity = "1.0";
+                    document.getElementsByClassName("wordsSpace5")[0].children[0].style.opacity = "0.0";
+                    document.getElementsByClassName("wordsSpace5")[0].children[1].style.opacity = "0.0";
                     document.getElementsByClassName("wordsSpace5")[0].children[0].style.display = "none";
                     document.getElementsByClassName("wordsSpace5")[0].children[1].style.display = "none";
                     document.getElementsByClassName("wordsSpace5")[0].children[2].style.opacity = "1.0";
-                } else if (scrolledPercent < 1750) {
+                } else if (scrolledPercent < 1680) {
                 
                     document.getElementsByClassName("div11")[0].style.opacity = "0.0"; 
                     document.getElementsByClassName("div12")[0].style.opacity = "0.0";
